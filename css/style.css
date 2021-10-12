@@ -2413,7 +2413,7 @@ h3 {
 .program_details_area {
   background-size: cover;
   background-position: bottom center;
-  padding: 150px 0;
+  padding-top: 150px;
 }
 
 /* line 11, ../../Arafath/CL/December/236. Event-02/HTML/scss/_program_details.scss */
@@ -2430,7 +2430,7 @@ h3 {
   transform: translateX(-50%);
   content: "";
   background: rgba(255, 255, 255, 0.2);
-  height: 73%;
+  height: 100%;
   width: 1px;
   top: 0;
   bottom: 0;
@@ -2508,7 +2508,6 @@ h3 {
 .program_details_area .program_detail_wrap .single_propram:nth-child(2n) {
   width: 100%;
   float: left;
-  margin-top: -110px;
 }
 
 @media (max-width: 767px) {
@@ -3347,6 +3346,7 @@ h6 {
 
 /* line 455, ../../Arafath/CL/December/236. Event-02/HTML/scss/_elements.scss */
 .unordered-list li {
+  color: #fff;
   position: relative;
   padding-left: 30px;
   line-height: 1.82em !important;
@@ -5817,6 +5817,16 @@ h6 {
   background-color: #000000;
 }
 
+.register_area .section_title h3 {
+  color: #ff4533;
+}
+
+.register_area .rules-head h4 {
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  color: #fff;
+}
+
 .prizes_area {
   background-color: #000;
 }
@@ -5877,6 +5887,10 @@ h6 {
   border: #f44a40 solid 1px;
   background-color: #f44a40;
   transition: 0.5s ease-in-out;
+}
+
+.empty-div {
+  height: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

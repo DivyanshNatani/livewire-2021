@@ -129,7 +129,7 @@ function submitRegForm() {
     facebook_link: links,
   };
   // fetch("http://127.0.0.1:8000/livewire/create/", {
-    //   city: city,
+  //   city: city,
   //   band_name: band_name,
   //   // genre: genre,
   //   emailid: email,
@@ -141,23 +141,23 @@ function submitRegForm() {
   //   alert("Registered Succesfully");
   //   console.log(res);
   // }).catch((err) => {
-    //   alert("Some error occured");
-    //   console.log(err);
-    // });
-    // fetch("http://127.0.0.1:8000/livewire/create/", {
-    fetch("https://api4.moodi.org/livewire/create", {
+  //   alert("Some error occured");
+  //   console.log(err);
+  // });
+  // fetch("http://127.0.0.1:8000/livewire/create/", {
+  fetch("https://api4.moodi.org/livewire/create", {
     method: "POST",
     headers: {
       'Content-Type': 'application/json',
-      },
+    },
     body: JSON.stringify(formData),
     // body: formData,
   }).then((res) => {
     console.log(res)
-    if(res.ok){
+    if (res.ok) {
       alert("Registered Succesfully");
       city.value = "";
-      band_name .value = "";
+      band_name.value = "";
       genre.value = "";
       email.value = "";
       past_ach.value = "";
@@ -168,7 +168,7 @@ function submitRegForm() {
       mem2_contact.value = "";
       links.value = "";
     }
-    else{
+    else {
       alert("There is some problem with registration, please try again later")
     }
     console.log(res);
