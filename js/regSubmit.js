@@ -121,18 +121,56 @@ function submitRegForm() {
   let formData = {
     city: city,
     band_name: band_name,
-    // genre: genre,
+    genre: genre,
     emailid: email,
     original_composition: past_ach,
     no_of_members: num_mem,
     bandmembers: "Name1: " + mem1_name + "No1: " + mem1_contact + " ; " + "Name2: " + mem2_name + "No2: " + mem2_contact,
     facebook_link: links,
   };
-  fetch("https://api4.moodi.org/livewire/create'", {
+  // fetch("http://127.0.0.1:8000/livewire/create/", {
+    //   city: city,
+  //   band_name: band_name,
+  //   // genre: genre,
+  //   emailid: email,
+  //   original_composition: past_ach,
+  //   no_of_members: num_mem,
+  //   bandmembers: "Name1: " + mem1_name + "No1: " + mem1_contact + " ; " + "Name2: " + mem2_name + "No2: " + mem2_contact,
+  //   facebook_link: links,
+  // }).then((res) => {
+  //   alert("Registered Succesfully");
+  //   console.log(res);
+  // }).catch((err) => {
+    //   alert("Some error occured");
+    //   console.log(err);
+    // });
+    // fetch("http://127.0.0.1:8000/livewire/create/", {
+    fetch("https://api4.moodi.org/livewire/create", {
     method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+      },
     body: JSON.stringify(formData),
+    // body: formData,
   }).then((res) => {
-    alert("Registered Succesfully");
+    console.log(res)
+    if(res.ok){
+      alert("Registered Succesfully");
+      city.value = "";
+      band_name .value = "";
+      genre.value = "";
+      email.value = "";
+      past_ach.value = "";
+      num_mem.value = "";
+      mem1_name.value = "";
+      mem1_contact.value = "";
+      mem2_name.value = "";
+      mem2_contact.value = "";
+      links.value = "";
+    }
+    else{
+      alert("There is some problem with registration, please try again later")
+    }
     console.log(res);
   }).catch((err) => {
     alert("Some error occured");
