@@ -2038,22 +2038,22 @@ h3 {
 .about_area .about_thumb .thumb_inner {
   position: relative;
   z-index: 11;
-}
-
-.thumb_inner {
   text-align: right;
-  /* margin-top: -60px; */
-}
-
-@media (max-width: 767px) {
-  .thumb_inner {
-    text-align: left;
-  }
 }
 
 /* line 41, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area .about_thumb .thumb_inner img {
   width: 80%;
+}
+
+@media (max-width: 767px) {
+  .about_area .about_thumb .thumb_inner {
+    text-align: center;
+  }
+
+  .about_area .about_thumb .thumb_inner img {
+    width: 60%;
+  }
 }
 
 /* line 48, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
@@ -2062,12 +2062,25 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #ff4533;
+  text-align: left;
 }
 
 /* line 54, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area .about_info p {
   margin-top: 15px;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .about_area .about_info h4,
+  .about_area .about_info p {
+    text-align: center;
+  }
+
+  .about_area {
+    text-align: center;
+  }
 }
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_bradcam.scss */

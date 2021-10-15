@@ -156,17 +156,17 @@ function submitRegForm() {
     console.log(res)
     if (res.ok) {
       alert("Registered Succesfully");
-      city.value = "";
-      band_name.value = "";
-      genre.value = "";
-      email.value = "";
-      past_ach.value = "";
-      num_mem.value = "";
-      mem1_name.value = "";
-      mem1_contact.value = "";
-      mem2_name.value = "";
-      mem2_contact.value = "";
-      links.value = "";
+      document.getElementById("city").value = "";
+      document.getElementById("band_name").value = "";
+      document.getElementById("genre").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("past_ach").value = "";
+      document.getElementById("num_mem").value = "";
+      document.getElementById("mem1_name").value = "";
+      document.getElementById("mem1_contact").value = "";
+      document.getElementById("mem2_name").value = "";
+      document.getElementById("mem2_contact").value = "";
+      document.getElementById("links").value = "";
     }
     else {
       alert("There is some problem with registration, please try again later")
