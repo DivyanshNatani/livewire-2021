@@ -5920,4 +5920,10 @@ h6 {
 .color-red {
   color: #ff4533 !important;
 }
+
+@media (max-width: 767px) {
+  .main-hr {
+    width: 97% !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
