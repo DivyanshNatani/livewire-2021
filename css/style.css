@@ -1668,9 +1668,12 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top: #fff 1px solid;
+  border-bottom: #fff 1px solid;
   font-family: "Staatliches", sans-serif;
+  width: fit-content;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2340,6 +2343,10 @@ h3 {
 /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
 .brand_area {
   padding-top: 150px;
+}
+
+.brand_area .single_brand {
+  padding: 20px;
 }
 
 @media (max-width: 767px) {
