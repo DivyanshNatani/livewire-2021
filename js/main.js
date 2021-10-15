@@ -368,13 +368,13 @@
 })(jQuery);
 
 
-    // Prizes
-    // console.log("Enterd");
-    let prizeImgs = document.getElementsByClassName('card-image');
-    for (var i = 0; i < prizeImgs.length; i++) {
-      let element = prizeImgs[i];
-      let h = element.offsetHeight;
+// Prizes
+// console.log("Enterd");
+let prizeImgs = document.getElementsByClassName('card-image');
+for (var i = 0; i < prizeImgs.length; i++) {
+  let element = prizeImgs[i];
+  let h = element.offsetHeight;
 
-      element.parentElement.style.height = h * 5 / 4 + "px";
-      console.log(element.parentElement.style);
-    }
+  element.parentElement.style.height = h * 5 / 4 + "px";
+  console.log(element.parentElement.style);
+}
