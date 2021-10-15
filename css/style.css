@@ -461,6 +461,12 @@ h3 {
   padding-left: 45px;
 }
 
+@media (min-width: 768px) {
+  .pl-md-45 {
+    padding-left: 45px;
+  }
+}
+
 @media (max-width: 767px) {
   /* line 330, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
   .pl-68 {
@@ -2026,10 +2032,17 @@ h3 {
   z-index: 11;
 }
 
-.thumb_inner{
+.thumb_inner {
   text-align: right;
   /* margin-top: -60px; */
 }
+
+@media (max-width: 767px) {
+  .thumb_inner {
+    text-align: left;
+  }
+}
+
 /* line 41, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area .about_thumb .thumb_inner img {
   width: 80%;
@@ -2250,7 +2263,6 @@ h3 {
     padding-bottom: 60px;
   }
 }
-
 
 /* line 12, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer {
@@ -5901,7 +5913,7 @@ h6 {
 .empty-div {
   height: 60px;
 }
-.color-red{
+.color-red {
   color: #ff4533 !important;
 }
 /*# sourceMappingURL=style.css.map */
