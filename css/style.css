@@ -2342,6 +2342,10 @@ h3 {
   padding-top: 150px;
 }
 
+.brand_area .single_brand {
+  padding: 20px;
+}
+
 @media (max-width: 767px) {
   /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
   .brand_area {
