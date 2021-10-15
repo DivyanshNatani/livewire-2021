@@ -344,6 +344,10 @@ h3 {
   padding-top: 120px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 /* button style */
 /* line 237, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .owl-carousel .owl-nav div {
@@ -5915,5 +5919,11 @@ h6 {
 }
 .color-red {
   color: #ff4533 !important;
+}
+
+@media (max-width: 767px) {
+  .main-hr {
+    width: 97% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
