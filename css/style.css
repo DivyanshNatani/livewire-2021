@@ -348,6 +348,10 @@ h3 {
   padding-top: 100px;
 }
 
+.pt-80 {
+  padding-top: 80px;
+}
+
 /* button style */
 /* line 237, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 .owl-carousel .owl-nav div {
@@ -2270,7 +2274,7 @@ h3 {
 
 /* line 12, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
 .performar_area .single_performer {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
@@ -2310,7 +2314,7 @@ h3 {
   font-family: "Staatliches", sans-serif;
   color: #fff;
   font-weight: 400;
-  margin-bottom: 14px;
+  margin-bottom: 0px;
 }
 
 /* line 37, ../../Arafath/CL/December/236. Event-02/HTML/scss/_performer.scss */
