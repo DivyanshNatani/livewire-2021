@@ -1575,6 +1575,12 @@ h3 {
   z-index: -1;
 }
 
+
+@media (min-width: 1200px) {
+
+  
+}
+
 @media (max-width: 767px) {
   /* line 26, ../../Arafath/CL/December/236. Event-02/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text .shape_2 {
@@ -5951,3 +5957,8 @@ h6 {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* .mood-head{
+  margin-top: 2.1rem;
+} */
