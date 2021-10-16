@@ -313,9 +313,9 @@
     let prizeImgs = document.getElementsByClassName('card-image');
     for (var i = 0; i < prizeImgs.length; i++) {
       let element = prizeImgs[i];
-      console.log(element);
+      // console.log(element);
       let h = element.clientWidth;
-      console.log(h);
+      // console.log(h);
       element.parentElement.style.height = h * 5 / 4 + "px";
     }
   });
